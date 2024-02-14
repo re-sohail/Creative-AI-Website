@@ -1,0 +1,403 @@
+@font-face {
+    font-family: "Gibby";
+    src: url("fonts/OPTIGibby.otf");
+    src: url("fonts/OPTIGibby.otf") format("otf");
+}
+@font-face {
+    font-family: "PaperTiger";
+    src: url("fonts/papertiger.ttf");
+    src: url("fonts/papertiger.ttf") format("ttf");
+}
+@font-face {
+    font-family: "AuliaGrotesk";
+    src: url("fonts/AuliaGrotesk.otf");
+    src: url("fonts/AuliaGrotesk.otf") format("otf");
+}
+@font-face {
+    font-family: "KronaOne";
+    src: url("fonts/KronaOne.ttf");
+    src: url("fonts/KronaOne.ttf") format("ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    width: 100%;
+    height: auto;
+    background: #141414;
+    padding: 20px 40px;
+}
+.header{
+    width: 100%;
+    height: 50px;
+    /* background: lightblue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header>h2{
+    font-size: 25px;
+    font-family: "Gibby";
+    font-weight: 500;
+    letter-spacing: 3px;
+    width: 20%;
+    color: #fff;
+
+}
+.list{
+    width: 50%;
+    text-align: center;
+
+}
+.list ul li{
+    display: inline-block;
+    align-items: center;
+    padding: 0 20px;
+}
+.list ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: "Gibby";
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.Btn{
+    width: 25%;
+    
+}
+.Btn button{
+    padding: 0 15px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    font-family: "Gibby";
+    letter-spacing: 1px;
+    color: #fff;
+}
+.Btn button:nth-last-child(1){
+    margin: 0 0 0 10px;
+    padding: 15px 35px;
+    border-radius: 40px;
+    color: #000000;
+    background: #ffffff;
+}
+.main-body{
+    width: 100%;
+    height: auto;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    padding: 15px 0 0;
+}
+.left-side{
+    width: 17.5%;
+    padding: 20px 0 0;
+}
+.upper img{
+    width: 230px;
+    border-radius: 5px;
+    cursor: pointer;
+    transform: scaleX(-1);
+}
+.upper h2, .lower h2, .top-rated h2{
+    color: #c9c9c9d4;
+    font-family: "KronaOne";
+    font-size: 13px;
+    padding: 10px 0 5px;
+    text-transform: uppercase;
+    
+}
+.upper p, .lower p, .top-rated p{
+    color: #c9c9c9d4;
+    font-family: "AuliaGrotesk";
+    font-size: 10px;
+    letter-spacing: 1px;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    width: 90%;
+    text-transform: uppercase;
+    
+}
+.lower p{
+    margin-bottom: 30px;
+
+}
+.lower h2{
+    padding: 45px 0 0 0;
+}
+.lower button{
+    padding: 20px 50px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    margin-bottom: 10px;
+    font-family: "Gibby";
+    font-size: 16px;
+    cursor: pointer;
+}
+.lower button:nth-last-child(2){
+    background: #C1C9FD;
+}
+.center{
+    width: 65%;
+}
+.center h1{
+    font-size: 190px;
+    font-family: "Gibby";
+    color: #F5F3EF;
+    text-align: center;
+    line-height: 180px;
+}
+.center img{
+    width: 100%;
+    height: 335px;
+    object-position: center;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.right-side{
+    width: 17.5%;
+    padding: 20px 0 20px 20px;
+    
+}
+.img-star{
+    display: flex;
+}
+.stars{
+    width: 40px;
+    height: 70px;
+    background: #F5F3EF;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.stars i{
+    font-size: 20px;
+    padding: 0 0 6px 0;
+}
+.stars h4{
+    font-size: 16px;
+    font-family: "gibby";
+}
+.img-star img{
+    width: 40px;
+    height: 70px;
+    border-radius: 50px;
+    object-position: center;
+    object-fit: cover;
+    margin-left: 10px;
+}
+.right-side>h2{
+    color: #cbcbcbe9;
+    font-family: "Gibby";
+    font-size: 14px;
+    padding: 10px 0;
+    width: 50%;
+    line-height: 14px;
+}
+.line{
+    display: flex;
+    align-items: center;
+}
+.first{
+    width: 25px;
+    height: 3px;
+    background: #EBEBEB;
+    border-radius: 5px;
+}
+.Second{
+    width: 12px;
+    height: 3px;
+    background: #ABB0EC;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+.third{
+    width: 7px;
+    height: 3px;
+    background: #51ADA1;
+    border-radius: 5px;
+}
+.top-rated{
+    padding: 70px 0 45px 0;
+}
+.design{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+.box{
+    width: 200px;
+    height: 210px;
+    background: #ffffff;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 20px;
+    padding: 50px 30px 0;
+}
+.arrow-btn{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    background: #141414;
+    border-bottom-left-radius: 30px;
+}
+.arrow{
+    padding: 15px 15px;
+    background: #F7BC33;
+    display: inline;
+    border-radius: 50%;
+    position: absolute;
+    right: 5px;
+    top: 10px;
+
+}
+.arrow i{
+    font-size: 24px;
+    border: 2px solid black;
+    border-radius: 50px;
+}
+.curve1{
+    width: 40px;
+    height: 40px;
+    /* background: #812929; */
+    position: absolute;
+    top: 0;
+    right: 80px;
+    border-top-right-radius: 20px;
+    box-shadow: 0 -18px 0 #141414;
+}
+.curve2{
+    width: 40px;
+    height: 40px;
+    /* background: #812929; */
+    position: absolute;
+    top: 80px;
+    right: 0;
+    border-top-right-radius: 20px;
+    box-shadow: 0 -18px 0 #141414;
+}
+.customer{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+.customer h1{
+    font-size: 30px;
+    font-family: "AuliaGrotesk";
+}
+.customer p{
+    font-size: 14px;
+    font-family: "AuliaGrotesk";
+}
+.box>p{
+    font-family: "KronaOne";
+    font-size: 10px;
+    margin: 20px 0;
+}
+.images img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+.images img:nth-child(2), .images img:nth-child(3), .images img:nth-child(4){
+    margin-left: -10px;
+    border: 2px solid #fff;
+}
+.text p{
+    color: #c9c9c9d4;
+    font-family: "AuliaGrotesk";
+    font-size: 10px;
+    letter-spacing: 1px;
+    padding: 10px 0;
+    margin-top: 20px;
+    width: 90%;
+    text-transform: uppercase;
+}
+.section2{
+    width: 100%;
+    height: auto;
+    background: #F5F3EF;
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left-part{
+    width: 17.5%;
+}
+.user{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.user img{
+    width: 70px;
+    height: 55px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+}
+.user-text h1{
+    font-size: 30px;
+    font-family: "AuliaGrotesk";
+}
+.user-text p{
+    font-size: 14px;
+    font-family: "AuliaGrotesk";
+}
+.left-part>p{
+    font-size: 12px;
+    font-family: "AuliaGrotesk";
+    padding-top: 8px;
+    width: 85%;
+    text-transform: uppercase;
+}
+.center-part{
+    width: 65%;
+    border-left: 4px solid #141414;
+    border-right: 4px solid #141414;
+}
+.center-part h1{
+    font-size: 70px;
+    font-family: "Gibby";
+    line-height: 70px;
+    text-align: center;
+}
+.right-part{
+    width: 17.5%;
+}
+.scroll-down{
+    width: 100px;
+    height: 100px;
+    background: #000000;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.scroll-down h3{
+    color: #EBEBEB;
+    font-family: "Gibby";
+    font-size: 12px;
+}
+.scroll-down i{
+    font-size: 20px;
+    color: #EBEBEB;
+    
+}
